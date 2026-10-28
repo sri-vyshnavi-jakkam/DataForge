@@ -6,3 +6,10 @@ __pycache__/
 models/*.pkl
 
 .ipynb_checkpoints/
+.venv/
+ml/venv/
+ml/.venv/
+ml/models/*.pkl
+
+ml/backend/__pycache__/
+ml/backend/test_data.csv
