@@ -8,8 +8,10 @@ import requests
 import pandas as pd
 import streamlit as st
 
-API_URL = os.getenv("DATAFORGE_API_URL", "http://127.0.0.1:8000").rstrip("/")
-
+API_URL = st.secrets.get(
+    "DATAFORGE_API_URL",
+    os.getenv("DATAFORGE_API_URL", "http://127.0.0.1:8000")
+).rstrip("/")
 
 # --------------------------------------------------
 # PAGE CONFIGURATION
